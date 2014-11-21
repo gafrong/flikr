@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="col-md-8 col-centered">
+    <h1 class="handwritting">Wishlist</h1>
+
+      <ul>
+        <% @user_wishlist.each do |item|  %>
+        <% wishlist_item = item.item %>
+        <li class="wishlist" id="wishlist">
+          <img src= <%=wishlist_item.image_url50%>>
+          <p class="wishlist">
+            <%= link_to wishlist_item.name, item_details_path(wishlist_item.id) %>
+
+            <%= wishlist_item.price %>
+
+          <i class="glyphicon glyphicon-trash"></i><%= link_to 'delete', delete_from_wishlist_path(:item_id => wishlist_item.id), class: "deleting" %>
+
+          </p>
+
+        </li>
+        <% end %>
+      </ul>
+
+    <%= link_to root_path do %>
+      <i class="glyphicon glyphicon-chevron-left"></i> Back
+    <% end %>
+
+
+
+  </div>
+  </div>
+</div>
+
+
+<script>
+
+  $(".deleting").on('click',function() {
+  $(this).closest("li").fadeOut( "slow" );
+});
+
+</script>

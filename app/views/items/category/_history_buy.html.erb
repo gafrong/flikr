@@ -1,0 +1,14 @@
+
+<% if @next_item != nil %>
+
+<div class="">
+	<%= form_tag('/create_history_from_buy', :method => 'post', :target => '_blank') do %>
+	<%= hidden_field_tag 'item_id', @next_item.id %>
+	<%= hidden_field_tag 'liked', 'true'  %>
+	<%= hidden_field_tag 'clicked_through', 'true'  %>
+	<%= hidden_field_tag 'next_item', @next_item.id  %>
+	<%= submit_tag 'Buy', :id => 'buy-btn', :class => 'btn btn-sm btn-default center' %>
+	<% end %>
+</div>
+
+<% end %>

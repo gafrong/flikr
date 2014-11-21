@@ -1,0 +1,18 @@
+<div class="show-item">
+    <p><%= @item.name  %></p>
+  <p>$<%= @item.price  %> AUD</p>
+  <img src=<%=@item.image_url400  %> >
+
+
+
+
+  <%= form_tag('/edit_history', :method => 'post', :target => "_blank") do %>
+    <%= hidden_field_tag 'item_id', @item.id %>
+    <%= hidden_field_tag 'liked', 'true'  %>
+    <%= hidden_field_tag 'clicked_through', 'true'  %>
+    <%= submit_tag 'Buy', :class => "btn btn-default", :id => "show-page-buy-btn" %>
+  <% end %>
+
+  <%= link_to 'Back to Wishlist', user_wishlist_path(:item_id => @item.id), :class => "btn btn-default", :id => "show-page-btn" %>
+  <%= link_to 'Delete from Wishlist', delete_from_wishlist_path(:item_id => @item.id), :class => "btn btn-default", :id => "show-page-btn" %>
+</div>

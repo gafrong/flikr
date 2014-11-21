@@ -1,0 +1,31 @@
+.yes, .no {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #f00;
+  opacity: 0; 
+}
+
+.no {
+  background: #d6655a; 
+}
+
+.yes {
+  background: #b8cc6e; 
+}
+#yes {
+  position: absolute;
+  top: 170px;
+  left: 170px;
+  font-family: 'Prata', serif;
+  color: #fff;
+}
+#no {
+  position: absolute;
+  top: 170px;
+  left: 150px;
+  font-family: 'Prata', serif;
+  color: #fff;
+}

@@ -1,0 +1,20 @@
+<div class="container center">
+  <div class="col-md-6 center">
+    <!-- captures and sends color value to show as filter -->
+    <%= form_tag "/items/category/#{params[:gender]}/all", :method => 'get', :class => "color_btn" do %>
+    <button class="btn_all">all</button>
+    <% end %>
+
+    <% color_list = %w(Black White Grey Pink Red Orange Blue Navy Brown Gold Nude)  %> 
+
+    <% color_list.each do |color| %>
+
+      <%= form_tag "/items/category/#{params[:gender]}/all", :method => 'get', :class => "color_btn" do %>
+      <%= hidden_field_tag 'color', color %>
+      <button class=<%="btn_#{color.downcase}"%>><%= color.downcase %></button>
+      <% end %>
+
+    <% end %>
+    
+  </div> <!-- ends color  -->
+</div>  <!-- ends container -->

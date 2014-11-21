@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="select-category">
+
+    <% if @cat1 %>
+      <a href="/items/category/<%= "#{@name}" %>/<%= "#{(@cat1.downcase)}/view" %>"><button type="button" class="btn btn-default" id="category-button">View All <%= @cat1 %> <i class="fa fa-caret-right"></i></button></a>
+    <% else %>
+      <a href="/items/category/<%= "#{(@name.downcase)}" %>/all"><button type="button" class="btn btn-default" id="category-button">View All <%= @name %> </button></a>
+    <% end %>
+
+    <ul class="menu">
+      <% @children.each do |cat| %>
+        <li>
+          <a href="/items/category/<%= @gender_old %>/<%= cat.name %>">
+            <button type="button" class="btn btn-default" id="category-button">
+              <%= cat.name %>
+            </button>
+          </a>
+        </li>
+      <% end %>
+      <a href="<%= request.referer %>"><button type="button" class="btn btn-default" id="category-button"> Back</button></a>
+    </ul>
+  </div>
+
+</div>

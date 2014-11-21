@@ -1,0 +1,546 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+html {
+  width: 100%;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+
+.login-container {
+  text-align: center;
+  width: 100%;
+  margin-top: 10em;
+  font-family: 'Prata', serif;
+}
+
+.login-form p {
+  font-family: 'Prata', serif;
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+.btn-default {
+  width: 20em;
+  margin: 0.5em auto;
+}
+
+/*----- navbar -----*/
+
+.dropdown-menu > li > a {
+  text-align: right;
+}
+.navbar-collapse > ul > li > a {
+  text-align: right;
+}
+.navbar-toggle {
+  text-align: right;
+}
+.navbar-brand {
+  font-family: 'Prata', serif;
+  font-size: 2em;
+  color: white;
+}
+.navbar-brand > a {
+  color: white;
+}
+.navbar-header.container-fluid.navbar-brand {
+  color: orange;
+}
+
+/*----- navbar -----*/
+
+/*----- btn colors -----*/
+.show-page-filter {
+  display: inline-block;
+  text-align: center;
+}
+.colors {
+  margin-left: 100px;
+}
+.color_btn {
+  display: inline-block;
+}
+.show-page-filter.btn_colors {
+  background-color: green;
+
+}
+.btn_all {
+  color: #999;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px #777;
+}
+.btn_all:hover {
+  box-shadow: 3px 3px 3px #777;
+}
+.btn_black {
+  color: #e8e8e8;
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px #777;
+}
+.btn_black:hover{
+  box-shadow: 3px 3px 3px #777;
+}
+.btn_white {
+  color: #e8e8e8;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px #777;
+}
+
+.btn_white:hover{
+  box-shadow: 5px 5px 5px #777;
+}
+.btn_grey {
+  color: #e8e8e8;
+  background-color: #b5b5b5;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px #777;
+}
+.btn_grey:hover {
+  box-shadow: 3px 3px 3px #777;
+}
+.btn_pink {
+  color: #e8e8e8;
+  background-color: #f49cc8;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px #777;
+}
+.btn_pink:hover {
+  box-shadow: 3px 3px 3px #777;
+}
+.btn_red {
+  color: #e8e8e8;
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px #777;
+}
+.btn_red:hover {
+  box-shadow: 3px 3px 3px #777;
+}
+.btn_orange {
+  color: #e8e8e8;
+  background-color: #ff7b00;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px #777;
+}
+.btn_orange:hover {
+  box-shadow: 3px 3px 3px #777;
+}
+.btn_blue {
+  color: #e8e8e8;
+  background-color: #25aae1;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px #777;
+}
+.btn_blue:hover{
+  box-shadow: 3px 3px 3px #777;
+}
+.btn_navy {
+  color: #e8e8e8;
+  background-color: navy;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px #777;
+}
+.btn_navy:hover {
+  box-shadow: 3px 3px 3px #777;
+}
+.btn_brown {
+  color: #e8e8e8;
+  background-color: brown;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px #777;
+}
+.btn_brown:hover{
+  box-shadow: 3px 3px 3px #777;
+}
+.btn_gold {
+  color: #e8e8e8;
+  background-color: #efcb83;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px #777;
+}
+.btn_gold:hover {
+  box-shadow: 3px 3px 3px #777;
+}
+.btn_nude {
+  color: #999;
+  background-color: #f7e7cd;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 1px #777;
+}
+.btn_nude:hover {
+  box-shadow: 3px 3px 3px #777;
+}
+.btn_colors {
+  text-align: center;
+}
+.color-box {
+  margin-bottom: 50px;
+}
+.btn-lg {
+  margin-bottom: 10px;
+}
+.show-page-controls {
+  color: white;
+}
+#select-mens a {
+  text-decoration: none;
+}
+#select-mens a:hover {
+  color: #999;
+}
+#select-womens a {
+  text-decoration: none;
+}
+#select-womens a:hover {
+  color: #999;
+}
+#grey-btn {
+  background-color: rgb(200,200,200);
+}
+
+#grey-btn:hover {
+  background-color: rgb(150,150,150);
+}
+
+#liked_submit {
+  display: none;
+}
+
+#disliked_submit {
+  display: none;
+}
+
+#buy_submit {
+  margin: 0 auto;
+  display: block;
+}
+
+#item-details {
+  text-align: center;
+  font-size: 1.8em;
+  padding: 1em;
+}
+
+
+
+/*----- item show page -----*/
+
+#liked {
+  float: right;
+  background: none;
+  font-family: 'Prata', serif;
+}
+
+#disliked {
+  float: left;
+  background: none;
+  font-family: 'Prata', serif;
+}
+
+#item-details {
+  font-family: 'Lato', sans-serif;
+  margin-top: 1em;
+}
+
+
+#buy-btn {
+    background: none;
+    margin: 0 auto;
+    display: block;
+}
+
+#show-page-filter {
+  font-family: 'Prata', serif;
+  border: 1px solid #999;
+}
+
+
+
+
+
+@media screen and (max-width: 600px) {
+  .select-gender {
+    background-image: url('http://i.imgur.com/uQipJkN.jpg?1');
+    width: 100%;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 157%;
+    height: 0;
+    text-align: center;
+    position: fixed;
+
+  }
+
+  .select-buttons-div {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 10em;
+  }
+
+  .select-button {
+  background-color: black;
+  text-align: center;
+  padding-top: 0.5em;
+  width: 16em;
+  }
+
+  #select-mens {
+    width: 14em;
+  }
+
+
+
+}
+
+@media screen and (min-width: 600px) {
+    .select-gender {
+    background-image: url('http://i.imgur.com/uQipJkN.jpg?1');
+    width: 15em;
+    height: 50em;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    text-align: center;
+  }
+
+  .select-buttons-div {
+  width: 50em;
+  margin: 0 auto;
+  padding-top: 22em;
+  }
+
+  .select-button {
+  background-color: black;
+  text-align: center;
+  padding-top: 0.5em;
+  width: 20em;
+  }
+
+
+}
+
+.select-button a {
+  color: white;
+  font-family: 'Prata', serif;
+  font-size: 3em;
+}
+
+#select-womens {
+  float: right;
+  margin-top: 1em;
+}
+
+.select-gender h1 {
+  color: white;
+  font-family: 'Prata', serif;
+  font-size: 5em;
+  margin: 0;
+  font-style: italic;
+}
+
+@media screen and (max-width: 600px) {
+  .select-category {
+    width: 100%;
+
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .select-category {
+    width: 25em;
+    margin: 100px auto;
+  }
+
+  .select-category li {
+    list-style-type: none;
+  }
+}
+
+
+#category-button {
+  width: 100%;
+  margin: 0;
+  padding: 0.1em;
+  font-size: 2em;
+  background-color: black;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
+}
+
+#category-button:hover {
+  background-color: rgb(75,75,75)
+}
+
+div.container {
+  margin: 0 auto;
+  }
+
+li.wishlist {
+  list-style: none;
+  border: 1px solid #dfdfdf;
+  margin-top: 1em;
+}
+
+h1.handwritting {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+}
+
+.wishlist a  {
+  font-family: 'Prata', serif;
+  color: #000;
+}
+
+
+.navbar-inverse .navbar-brand {
+  color: #fff;
+}
+
+.navbar-inverse .navbar-brand:hover {
+  color: #999;
+}
+
+@media screen and (max-width: 320px) {
+  .navbar-header {
+
+  }
+}
+  U
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #999;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .show-item {
+    width: 100%;
+    font-family:'Lato', sans-serif;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .show-item {
+    width: 35em;
+    font-family:'Lato', sans-serif;
+    text-align: center;
+    margin: 20px auto;
+  }
+}
+
+.show-item img {
+  width: 100%;
+}
+
+#show-page-buy-btn {
+  margin: 0.1em auto;
+  display: block;
+  background-color: black;
+  color: white;
+}
+
+#show-page-btn {
+  margin: 0.1em auto;
+  display: block;
+}
+
+p.wishlist {
+  display: inline;
+  padding: 1.3em;
+}
+
+ul.menu {
+    list-style-type: none;
+}
+

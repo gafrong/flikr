@@ -1,0 +1,32 @@
+input#username, input#password, input#password_confirmation {
+  background: #fff;
+  border: 1px solid #4c4c4c;
+  width: 13em;
+  border-radius: 3px;
+  text-align: center;
+  padding-top:4px;
+}
+
+h1 {
+  padding-botton: 0.2em;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    font-size: 0.8em;
+    color:    #4c4c4c;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #4c4c4c;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #4c4c4c;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #4c4c4c;
+}
+
+input:-webkit-autofill {
+  background-color: #000 !important;
+}

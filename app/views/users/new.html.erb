@@ -1,0 +1,43 @@
+<div class="login-container">
+
+<h1>SIGN UP</h1>
+
+
+  <div class="login-form form-horizontal">
+    <% if !@user.errors.empty? %>
+      <% @user.errors.full_messages.each do |msg| %>
+      <p class="error"><%= msg %></p>
+      <% end %>
+    <% end %>
+
+    <%= form_tag '/sign_up', id: "signUp" do %>
+
+      <p>
+        <%= text_field_tag :username, params[:username], placeholder: "username" %>
+      </p>
+      <p>
+        <%= password_field_tag :password, nil, placeholder: "password" %>
+      </p>
+      <p>
+        <%= password_field_tag :password_confirmation, nil, placeholder: "confirm password" %>
+      </p>
+      <button class="btn btn-default" id="grey-btn">SIGN UP</button>
+
+  <% end %>
+</div>
+
+<a href="/login"><button class="btn btn-default">I already have a login</button></a>
+
+
+<script>
+    // wait for the DOM to be loaded
+    $(document).ready(function() {
+        // bind 'myForm' and provide a simple callback function
+        $('#signUp').ajaxForm(function() {
+            alert("Thank you for signing up!");
+            window.location = "/";
+        });
+    });
+</script>
+
+</div>
