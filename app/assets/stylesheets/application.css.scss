@@ -22,7 +22,11 @@
 html {
   width: 100%;
 }
+body {
+  display: block;
+  overflow: hidden;
 
+}
 a {
   font-family: 'Open Sans', sans-serif;
 }
