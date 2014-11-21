@@ -125,20 +125,20 @@ input {
   }
 }
 
-@media screen and (min-width: 321px) and (max-width: 375px){
+@media screen and (min-width: 321px) and (max-width: 400px){
   #viewport {
     width: 360px;
     height: 380px;
 
   }
   #viewport .stack{
-    width: 320px;
-    height: 320px;
+    width: 330px;
+    height: 330px;
     margin-left: -165px;
   }
   #viewport li {
-    width: 320px;
-    height: 320px;
+    width: 330px;
+    height: 330px;
   }
   .img-change{
    width: 300px;
