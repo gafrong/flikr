@@ -103,28 +103,7 @@ input {
     color: #C7433E; }
 
 
-/*==== added media ====*/
-@media screen and (max-width: 420px){
-  #viewport {
-    width: 300px;
-    height: 340px;
 
-  }
-  #viewport .stack{
-    width: 280px;
-    height: 290px;
-    margin-left: -140px;
-  }
-  #viewport li {
-    width: 280px;
-    height: 300px;
-  }
-  .img-change{
-   width: 260px;
-   height: 260px;
-   margin-left: -5px;
-  }
-}
 
 
 

@@ -546,3 +546,46 @@ ul.menu {
 }
 
 
+/*==== added media ====*/
+@media screen and (max-width: 320px){
+  #viewport {
+    width: 310px;
+    height: 330px;
+    margin-left: -10px;
+  }
+  #viewport .stack{
+    width: 260px;
+    height: 260px;
+    margin-left: -140px;
+  }
+  #viewport li {
+    width: 280px;
+    height: 280px;
+  }
+  .img-change{
+   width: 260px;
+   height: 260px;  
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px){
+  #viewport {
+    width: 360px;
+    height: 380px;
+
+  }
+  #viewport .stack{
+    width: 320px;
+    height: 320px;
+    margin-left: -165px;
+  }
+  #viewport li {
+    width: 320px;
+    height: 320px;
+  }
+  .img-change{
+   width: 300px;
+   height: 300px; 
+   margin-left: -5px; 
+  }
+}
