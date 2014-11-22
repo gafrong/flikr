@@ -127,23 +127,24 @@ input {
 
 @media screen and (max-width: 400px){
   #viewport {
-    width: 360px;
+    width: 340px;
     height: 380px;
 
   }
   #viewport .stack{
-    width: 330px;
-    height: 330px;
-    margin-left: -165px;
+    width: 310px;
+    height: 310px;
+    margin-left: -160px;
   }
   #viewport li {
-    width: 330px;
+    width: 320px;
     height: 330px;
   }
   .img-change{
-   width: 300px;
-   height: 300px; 
+   width: 290px;
+   height: 290px; 
    margin-left: -5px; 
+   margin-top: 10px;
   }
 }
 

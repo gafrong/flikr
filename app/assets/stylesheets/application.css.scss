@@ -23,9 +23,9 @@ html {
   width: 100%;
 }
 body {
-  display: block;
-  overflow: hidden;
 
+  overflow-x: hidden;
+  height: 100%;
 }
 a {
   font-family: 'Open Sans', sans-serif;
